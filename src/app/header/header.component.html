@@ -1,0 +1,31 @@
+<header>
+    <section class="info-container">
+        <section>
+            <a target="_blank" href="https://facebook.com/dermatovet.pe"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a target="_blank" href="https://instagram.com/dermatovet"><i class="fa-brands fa-square-instagram"></i></a>
+        </section>
+        <section>
+            <p>Citas dermatológicas: <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20vengo%20de%20la%20web">
+                    +51 979 707 797
+                </a></p>
+            <p>|</p>
+            <p><a (click)="this.sharedSvc.goLocales()">Locales: San Borja y Jesús María</a></p>
+        </section>
+    </section>
+    <section class="header-container">
+        <section class="logo">
+            <a (click)="sharedSvc.goHome()">
+                <img src="../../assets/logo-dermatovet.png" alt="logo-dermatovet" width="200px">
+            </a>
+        </section>
+        <nav>
+            <button (click)="sharedSvc.goHome()">Inicio</button>
+            <button (click)="sharedSvc.goDermatologia()">Dermatología</button>
+            <button (click)="sharedSvc.goAseo()">Baños/Aseo</button>
+            <button (click)="sharedSvc.goLocales()">Locales</button>
+            <button (click)="sharedSvc.goContacto()">Contacto</button>
+        </nav>
+    </section>
+</header>
