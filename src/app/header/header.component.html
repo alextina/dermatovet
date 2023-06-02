@@ -20,12 +20,16 @@
                 <img src="../../assets/logo-dermatovet.png" alt="logo-dermatovet" width="200px">
             </a>
         </section>
-        <nav>
-            <button (click)="sharedSvc.goHome()">Inicio</button>
-            <button (click)="sharedSvc.goDermatologia()">Dermatología</button>
-            <button (click)="sharedSvc.goAseo()">Baños/Aseo</button>
-            <button (click)="sharedSvc.goLocales()">Locales</button>
-            <button (click)="sharedSvc.goContacto()">Contacto</button>
-        </nav>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li class="first-menu-item"><a (click)="sharedSvc.goHome()">Inicio</a></li>
+            <li><a (click)="sharedSvc.goDermatologia()">Dermatología</a></li>
+            <li><a (click)="sharedSvc.goAseo()">Baños/Aseo</a></li>
+            <li><a (click)="sharedSvc.goLocales()">Locales</a></li>
+            <li><a (click)="sharedSvc.goContacto()">Contacto</a></li>
+        </ul>
     </section>
 </header>
