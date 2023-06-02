@@ -83,11 +83,6 @@ ul,
 ol {
     font-size: var(--a-size);
     line-height: 1.5em;
-    padding: 10px;
-}
-
-li {
-    padding: 5px 0;
 }
 
 button {

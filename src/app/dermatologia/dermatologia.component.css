@@ -1,0 +1,32 @@
+.section-1 {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin: auto;
+    background-color: var(--accent-color);
+}
+
+.logo {
+    width: 200px;
+}
+
+.section-1 h1 {
+    color: var(--main-dark-color);
+}
+
+.section-1 h3,
+.section-1 p {
+    width: 90%;
+    max-width: 750px;
+}
+
+.image {
+    min-width: 200px;
+    min-height: auto;
+    margin: -50px;
+}
