@@ -1,0 +1,235 @@
+.section-1 {
+    width: 100%;
+    padding: 175px 5%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/fondo-para-web-1.jpg);
+    background-size: cover;
+    background-position: 60% center;
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        img {
+            display: none;
+            width: 30%;
+            margin: auto;
+        }
+
+        h1 {
+            width: 50%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 450px;
+            justify-content: center;
+
+            button {
+                flex-grow: 1;
+                min-width: 215px;
+            }
+
+            button:first-child {
+                background-color: var(--main-dark-color);
+                color: var(--main-light-color);
+
+                &:hover {
+                    background-color: var(--main-light-color);
+                    color: var(--main-dark-color);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1600px) {
+        padding: 300px 10%;
+    }
+
+    @media (max-width: 700px) {
+        padding: 100px 5%;
+        background-color: var(--main-color);
+        background-image: none;
+        height: auto;
+
+        section {
+
+            img {
+                display: block;
+                margin-bottom: 15px;
+                width: 50%;
+            }
+
+            h1 {
+                width: 90%;
+                text-align: center;
+                margin: auto;
+                color: var(--main-light-color);
+                font-size: var(--h2-size);
+            }
+
+            div {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        padding: 50px 5%;
+    }
+}
+
+.section-2 {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--accent-color);
+    margin: auto;
+
+    .image,
+    .text {
+        width: 50%;
+    }
+
+    .image {
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../assets/dermatovet-10-años.jpg);
+        background-size: cover;
+        background-position: 60% center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5%;
+
+        h2,
+        h4 {
+            color: var(--main-light-color);
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        height: auto;
+
+        .image,
+        .text {
+            width: 100%;
+            text-align: center;
+            height: 350px;
+        }
+
+        .image {
+            background-position: center;
+        }
+    }
+}
+
+.section-3 {
+    width: 100%;
+    padding: 75px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .gallery {
+        margin: 40px 0 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        article {
+            flex: 2 2 200px;
+            text-align: center;
+            background-color: var(--main-color);
+            border-radius: 15px 15px 15px 15px;
+
+            img {
+                border-radius: 15px 15px 0 0;
+                width: 100%;
+                height: auto;
+            }
+
+            h4 {
+                padding: 15px;
+                color: var(--main-light-color);
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        .buttonClass {
+            flex-grow: 1;
+            min-width: 240px;
+        }
+
+        a {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            .fa-brands {
+                color: var(--main-dark-color);
+            }
+
+            &:hover {
+                .fa-brands {
+                    color: var(--main-light-color);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        min-height: auto;
+
+        .gallery {
+            flex-direction: column;
+
+            article {
+                flex: 1 1 100%;
+            }
+        }
+
+        div {
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        padding: 150px 10%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 50px 5%;
+    }
+}
