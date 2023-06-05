@@ -1,167 +1,235 @@
 .section-1 {
-    background: linear-gradient(to left, #F8D7E9, #FFFFFF);
-    height: 700px;
     width: 100%;
-    padding: 0 5%;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.info {
-    width: 40%;
+    padding: 175px 5%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-top: 20%;
-}
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/fondo-para-web-1.jpg);
+    background-size: cover;
+    background-position: 60% center;
 
-div {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
-button {
-    width: 250px;
-    background-color: var(--main-dark-color);
-    color: var(--main-light-color);
-}
+        img {
+            display: none;
+            width: 30%;
+            margin: auto;
+        }
 
-.info button:nth-child(2) {
-    background-color: var(--main-light-color);
-    border: solid 2px var(--main-dark-color);
-    color: var(--main-dark-color);
-}
+        h1 {
+            width: 50%;
+        }
 
-h1 {
-    color: var(--second-dark-color);
-}
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 450px;
+            justify-content: center;
 
-.image-1 {
-    width: 60%;
-    display: flex;
-    align-items: flex-end;
-}
+            button {
+                flex-grow: 1;
+                min-width: 215px;
+            }
 
-.image-1 img {
-    height: 615px;
-    width: auto;
+            button:first-child {
+                background-color: var(--main-dark-color);
+                color: var(--main-light-color);
+
+                &:hover {
+                    background-color: var(--main-light-color);
+                    color: var(--main-dark-color);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1600px) {
+        padding: 300px 10%;
+    }
+
+    @media (max-width: 700px) {
+        padding: 100px 5%;
+        background-color: var(--main-color);
+        background-image: none;
+        height: auto;
+
+        section {
+
+            img {
+                display: block;
+                margin-bottom: 15px;
+                width: 50%;
+            }
+
+            h1 {
+                width: 90%;
+                text-align: center;
+                margin: auto;
+                color: var(--main-light-color);
+                font-size: var(--h2-size);
+            }
+
+            div {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        padding: 50px 5%;
+    }
 }
 
 .section-2 {
+    width: 100%;
+    height: 450px;
     display: flex;
-    flex-direction: row;
-    background-color: var(--accent-color);
     flex-wrap: wrap;
-}
+    background-color: var(--accent-color);
+    margin: auto;
 
-.section-2 img {
-    width: 50%;
-    object-fit: cover;
-    max-width: 100%;
-}
+    .image,
+    .text {
+        width: 50%;
+    }
 
-.section-2 section {
-    padding: 50px;
-    color: var(--main-light-color);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    .image {
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../assets/dermatovet-10-años.jpg);
+        background-size: cover;
+        background-position: 60% center;
+    }
 
-}
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5%;
 
-.section-2 h2 {
-    color: var(--main-light-color);
-    margin-bottom: 30px;
-}
+        h2,
+        h4 {
+            color: var(--main-light-color);
+        }
+    }
 
-.section-2 h4 {
-    color: var(--main-light-color);
+    @media (max-width: 700px) {
+
+        height: auto;
+
+        .image,
+        .text {
+            width: 100%;
+            text-align: center;
+            height: 350px;
+        }
+
+        .image {
+            background-position: center;
+        }
+    }
 }
 
 .section-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 0 5% 0;
-    gap: 75px;
-}
-
-.section-3 p {
-    width: 50%;
-    text-align: center;
-    margin-top: -25px;
-    padding: 0 5%;
-}
-
-.section-3 h1 {
-    color: var(--main-dark-color);
-    align-items: center;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 90%;
-    cursor: pointer;
-}
-
-.gallery article {
-    width: 300px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.gallery img {
     width: 100%;
-    border-radius: 15px 15px 0 0;
-    object-fit: fill;
-}
-
-.gallery h4 {
-    height: 75px;
+    padding: 75px 5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--second-light-color);
-    border-radius: 0 0 15px 15px;
-}
+    gap: 20px;
 
-.section-3 div {
-    margin-top: -20px;
-    flex-wrap: wrap;
-}
 
-.buttonClass {
-    font-size: var(--h5-size);
-    height: 50px;
-    padding: 10px 20px;
-    color: var(--main-light-color);
-    background-color: var(--main-dark-color);
-    border-radius: 10px;
-    padding: 10px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-width: 250px;
-    margin: auto;
-}
+    h1,
+    p {
+        text-align: center;
+    }
 
-.fa-brands {
-    color: var(--main-light-color);
+    .gallery {
+        margin: 40px 0 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        article {
+            flex: 2 2 200px;
+            text-align: center;
+            background-color: var(--main-color);
+            border-radius: 15px 15px 15px 15px;
+
+            img {
+                border-radius: 15px 15px 0 0;
+                width: 100%;
+                height: auto;
+            }
+
+            h4 {
+                padding: 15px;
+                color: var(--main-light-color);
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        .buttonClass {
+            flex-grow: 1;
+            min-width: 240px;
+        }
+
+        a {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            .fa-brands {
+                color: var(--main-dark-color);
+            }
+
+            &:hover {
+                .fa-brands {
+                    color: var(--main-light-color);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        min-height: auto;
+
+        .gallery {
+            flex-direction: column;
+
+            article {
+                flex: 1 1 100%;
+            }
+        }
+
+        div {
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        padding: 150px 10%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 50px 5%;
+    }
 }

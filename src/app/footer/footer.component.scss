@@ -88,6 +88,12 @@ footer {
         }
     }
 
+    @media (min-width: 1501px) {
+        .footer-container {
+            padding: 0 10%;
+        }
+    }
+
     @media (max-width: 900px) {
         .logo-article {
             display: none;

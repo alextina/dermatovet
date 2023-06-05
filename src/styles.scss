@@ -31,7 +31,7 @@ body {
     --h4-size: 20px;
     --h5-size: 18px;
     --h6-size: 16px;
-    --p-size: 14px;
+    --p-size: 18px;
     --a-size: 14px;
     --small-size: 12px;
 }
@@ -85,7 +85,8 @@ ol {
     line-height: 1.5em;
 }
 
-button {
+button,
+.buttonClass {
     font-size: var(--h5-size);
     height: 50px;
     padding: 10px 20px;
@@ -94,11 +95,13 @@ button {
     border-radius: 10px;
     padding: 10px;
     font-weight: 600;
-    border: none;
+    border: 1px solid var(--main-dark-color);
     cursor: pointer;
     height: auto;
 }
 
+button:hover,
+.buttonClass:hover,
 button:focus,
 button:active {
     color: var(--main-light-color);
