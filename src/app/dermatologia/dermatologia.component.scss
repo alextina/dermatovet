@@ -1,32 +1,127 @@
-.section-1 {
-    width: 100%;
-    padding-top: 50px;
+.buttonClass {
+    width: 200px;
+    align-self: flex-end;
+}
+
+a {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
-    gap: 25px;
-    text-align: center;
-    margin: auto;
-    background-color: var(--accent-color);
+
+    .fa-brands {
+        color: var(--main-dark-color);
+    }
+
+    &:hover {
+        .fa-brands {
+            color: var(--main-light-color);
+        }
+    }
 }
 
-.logo {
-    width: 200px;
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .section-a {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 50px 5%;
+
+        @media (min-width: 1501px) {
+            padding: 100px 10%;
+        }
+    }
+
+    .section-b {
+        width: 50%;
+        height: auto;
+        background-color: var(--accent-color);
+        background-image: url(../../assets/dermatovet-10-años.jpg);
+        background-size: cover;
+        background-position: top 30% center;
+    }
+
+    @media (max-width: 800px) {
+
+        .buttonClass {
+            display: none;
+        }
+
+        .section-a {
+            width: 100%;
+        }
+
+        .section-b {
+            display: none;
+        }
+    }
 }
 
-.section-1 h1 {
-    color: var(--main-dark-color);
-}
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--main-light-color);
 
-.section-1 h3,
-.section-1 p {
-    width: 90%;
-    max-width: 750px;
-}
+    .section-a {
+        width: 50%;
+        height: auto;
+        background-image: url(../../assets/dra-vanessa-llerena-dermatovet.jpg);
+        background-size: cover;
+        background-position: center top 20%;
+    }
 
-.image {
-    min-width: 200px;
-    min-height: auto;
-    margin: -50px;
+    .section-b {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 50px 5%;
+
+        p {
+            font-size: var(--h6-size);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                list-style: circle;
+                margin-left: 25px;
+            }
+
+        }
+
+        @media (min-width: 1501px) {
+            padding: 100px 10%;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+
+        .buttonClass {
+            align-self: center;
+        }
+
+        .section-a {
+            width: 100%;
+            height: 500px;
+            background-position: center top 20%;
+        }
+
+        .section-b {
+            width: 100%;
+        }
+
+    }
 }

@@ -51,8 +51,8 @@
         }
     }
 
-    @media (min-width: 1600px) {
-        padding: 300px 10%;
+    @media (min-width: 1501px) {
+        padding: 250px 10%;
     }
 
     @media (max-width: 700px) {
@@ -117,6 +117,10 @@
         justify-content: center;
         padding: 0 5%;
 
+        @media (min-width: 1501px) {
+            padding-right: 10%;
+        }
+
         h2,
         h4 {
             color: var(--main-light-color);
@@ -142,15 +146,18 @@
 
 .section-3 {
     width: 100%;
-    padding: 75px 5%;
+    padding: 100px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 
+    h1 {
+        text-align: center;
+        color: var(--main-dark-color);
+    }
 
-    h1,
     p {
         text-align: center;
     }
@@ -190,6 +197,8 @@
         .buttonClass {
             flex-grow: 1;
             min-width: 240px;
+            align-items: center;
+            justify-content: center;
         }
 
         a {
