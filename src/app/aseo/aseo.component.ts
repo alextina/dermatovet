@@ -15,7 +15,7 @@ export class AseoComponent {
     {
       "id": 1,
       "title": "Therapy Clean",
-      "description": "Descubre Therapy Clean, un innovador sistema de baño hipoalergénico para mascotas. Con burbujas diminutas de carga negativa, elimina suavemente la caspa, el sebo y otras impurezas de piel y pelaje sin químicos ni detergentes. Disfruta de un tratamiento natural y profundo que reduce el mal olor, la picazón y la caída de pelo, siendo amigable con el medio ambiente.",
+      "description": "Therapy Clean es un innovador sistema de baño hipoalergénico para mascotas. Con burbujas diminutas de carga negativa, elimina suavemente la caspa, el sebo y otras impurezas de piel y pelaje sin químicos ni detergentes. Disfruta de un tratamiento natural y profundo que reduce el mal olor, la picazón y la caída de pelo, siendo amigable con el medio ambiente.",
       "details": {
         "Beneficios": [
           "Sin químicos, detergentes o abrasivos.",
@@ -59,7 +59,7 @@ export class AseoComponent {
     {
       "id": 4,
       "title": "Baño Medicado",
-      "description": "Nuestros baños medicados están diseñados para atender las dolencias específicas en la piel y los oídos de tus engreídos.Con la aplicación de medicamentos recetados por veterinarios, aseguramos una recuperación efectiva y rápida, brindando el cuidado necesario para aliviar molestias y mejorar la salud dermatológica de tu mascota.",
+      "description": "Nuestros baños medicados están diseñados para atender las dolencias específicas en la piel. Con la aplicación de medicamentos recetados por veterinarios, aseguramos una recuperación efectiva y rápida, brindando el cuidado necesario para aliviar molestias y mejorar la salud dermatológica de tu peque de 4 patas.",
       "details": {
         "La receta debe indicar": [
           "Medicamento a utilizar en los baños.",
