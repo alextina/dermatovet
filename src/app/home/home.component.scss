@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../../assets/fondo-para-web-1.jpg);
+    background-image: url(../../assets/background-image.png);
     background-size: cover;
     background-position: 60% center;
 
@@ -171,7 +171,7 @@
         article {
             flex: 2 2 200px;
             text-align: center;
-            background-color: var(--main-color);
+            background-color: var(--second-light-color);
             border-radius: 15px 15px 15px 15px;
             cursor: pointer;
 
@@ -183,7 +183,7 @@
 
             h4 {
                 padding: 15px;
-                color: var(--main-light-color);
+                color: var(--main-dark-color);
             }
         }
     }
@@ -192,7 +192,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 50px;
         justify-content: center;
 
         .buttonClass {
@@ -232,6 +232,7 @@
 
         div {
             flex-direction: column;
+            gap: 15px;
         }
     }
 
