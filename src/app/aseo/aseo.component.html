@@ -1,1 +1,40 @@
-<p>aseo works!</p>
+<section class="section-1">
+    <h1>Tratamientos de Aseo y Baños</h1>
+    <p>En nuestra clínica veterinaria especializada en dermatología, ofrecemos una variedad de servicios de aseo que
+        garantizan el bienestar y la salud de tu engreído. Desde baños clásicos para mantener su higiene, hasta baños
+        medicados y tratamientos especializados, nuestro equipo profesional se encargará de brindar el cuidado adecuado
+        para que tu mascota luzca y se sienta lo mejor posible. Confía en nosotros para cuidar de la piel y el pelaje de
+        tu compañero de cuatro patas.</p>
+    <section class="section-2">
+        <article *ngFor="let service of services" class="service">
+            <img [src]="service.image" alt="{{ service.title }}" />
+            <div>
+                <h2>{{ service.title }}</h2>
+                <p>{{ service.description }}</p>
+                <div class="buttons">
+                    <button (click)="openModal(service)">Ver detalles</button>
+                    <button (click)="goWhatsApp(service)">Agendar cita</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="modal-overlay" *ngIf="selectedService" (click)="closeModal()">
+        <div class="modal">
+            <div>
+                <h2>{{ selectedService.title }}</h2>
+                <span class="material-icons close" (click)="closeModal()">close</span>
+            </div>
+            <p>{{ selectedService.description }}</p>
+            <h3>{{ detailsTitle }}</h3>
+            <ul *ngIf="detailsTitle">
+                <li *ngFor="let detail of selectedService.details[detailsTitle]"><span
+                        class="material-icons">pets</span>{{ detail }}</li>
+            </ul>
+        </div>
+    </div>
+    <p><strong>*Importante:</strong> Todos estos servicios incluyen: Corte y limado de uñas, limpieza de glándulas
+        anales (previa
+        autorización por
+        escrito), cepillado de dientes, limpieza externa de oídos, y aplicación de bálsamo humectante en patas y nariz.
+    </p>
+</section>

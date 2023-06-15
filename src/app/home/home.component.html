@@ -21,21 +21,9 @@
         bálsamo humectante en patas y nariz.
     </p>
     <section class="gallery">
-        <article>
-            <img src="../../assets/therapy-clean.png" alt="">
-            <h4>Therapy Clean</h4>
-        </article>
-        <article>
-            <img src="../../assets/ozonoterapia.png" alt="">
-            <h4>Ozonoterapia</h4>
-        </article>
-        <article>
-            <img src="../../assets/baños-medicados.png" alt="">
-            <h4>Baño Medicado</h4>
-        </article>
-        <article>
-            <img src="../../assets/baños-clásicos.png" alt="">
-            <h4>Baño Clásico</h4>
+        <article *ngFor="let service of services" (click)="sharedSvc.goAseo()">
+            <img [src]="service.image" alt="{{service.title}}">
+            <h4>{{service.title}}</h4>
         </article>
     </section>
     <div>
