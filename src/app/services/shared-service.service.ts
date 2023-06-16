@@ -25,11 +25,6 @@ export class SharedServiceService {
     window.scrollTo(0, 0);
   }
 
-  goLocales(): void {
-    this.router.navigate(['contacto'])
-    window.scrollTo(0, 0);
-  }
-
   goContacto(): void {
     this.router.navigate(['contacto'])
     window.scrollTo(0, 0);

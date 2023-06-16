@@ -17,20 +17,24 @@
             <h1>Dra. Vanessa Llerena</h1>
             <h4>CMVP 5437</h4>
         </div>
-        <ul>
-            <li>Graduada como Médico Veterinario en 2004, (Universidad Alas Peruanas).</li>
-            <li>Pasantías: Dermatología veterinaria en University of Florida. Medicina Interna en Cornell University,
-                Ithaca (USA). Dermatoclínica Sao Paulo, Brasil.</li>
-            <li>Especialidad en Dermatología Veterinaria en el Centro de Especialidades Médicas Veterinarias en Buenos
-                Aires, Argentina.</li>
-            <li>Miembro efectivo de la Sociedad Latinoamericana de Dermatología Veterinaria (SLDV).</li>
-            <li>Miembro fundador de la Asociación Peruana de Dermatología Veterinaria.</li>
-            <li>Participante y ponente en congresos Internacionales de Dermatología y medicina Veterinaria.</li>
+        <ul *ngFor="let estudio of estudios">
+            <li><span class="material-icons">pets</span>{{estudio}}</li>
         </ul>
 
-        <p><strong>Horario:</strong> Atención de lunes a viernes de 9 am a 7 pm.</p>
         <a class="buttonClass" target="_blank"
             href="https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20vengo%20de%20la%20web">
             <i class="fa-brands fa-whatsapp"></i>Agendar una cita</a>
+    </section>
+</section>
+
+<section class="section-3">
+    <section class="section-a">
+        <h1>Servicios Dermatológicos</h1>
+        <article *ngFor="let servicio of servicios">
+            <h3><span class="material-icons">pets</span>{{servicio.servicio}}</h3>
+            <p>{{servicio.descripcion}}</p>
+        </article>
+    </section>
+    <section class="section-b">
     </section>
 </section>

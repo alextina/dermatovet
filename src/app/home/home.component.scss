@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../../assets/background-image.png);
+    background-image: url(../../assets/background-image.webp);
     background-size: cover;
     background-position: 60% center;
 
@@ -105,7 +105,7 @@
     .image {
         align-items: center;
         justify-content: center;
-        background-image: url(../../assets/dermatovet-10-años.jpg);
+        background-image: url(../../assets/dermatovet-10-años.webp);
         background-size: cover;
         background-position: 60% center;
     }
@@ -124,6 +124,10 @@
         h2,
         h4 {
             color: var(--main-light-color);
+        }
+
+        h4 {
+            font-weight: 400;
         }
     }
 

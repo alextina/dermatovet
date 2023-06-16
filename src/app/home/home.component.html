@@ -1,7 +1,7 @@
 <section class="section-1">
     <section>
-        <img src="../../assets/logo-dermatovet-blanco.png" alt="logo-blanco">
-        <h1>Lo que tu engreído necesita para que nunca dejes de abrazarlo.</h1>
+        <img src="../../assets/logo-dermatovet-blanco.webp" alt="logo-blanco">
+        <h1>Lo que tu engreído necesita para que nunca dejes de abrazarlo</h1>
         <div>
             <button (click)="this.sharedSvc.goDermatologia()">Consulta Dermatológica</button>
             <button (click)="this.sharedSvc.goAseo()">Tratamientos y Baños</button>
@@ -11,14 +11,13 @@
 <section class="section-2">
     <section class="image"></section>
     <section class="text">
-        <h2>Somos el 1ᵉʳ Centro Especializado en Dermatología Veterinaria en Lima.</h2>
+        <h2>Somos el 1ᵉʳ Centro Especializado en Dermatología Veterinaria en Lima</h2>
         <h4>Tenemos más de 10 años brindando bienestar dermatológico a los engreídos de casa.</h4>
     </section>
 </section>
 <section class="section-3">
     <h1>Tratamientos y Baños</h1>
-    <p>Todos nuestros servicios incluyen: corte y limado de uñas, cepillado de dientes, limpieza externa de oídos, y
-        bálsamo humectante en patas y nariz.
+    <p>Conoce todos los tratamientos de aseo y baños que tenemos para tu engreído.
     </p>
     <section class="gallery">
         <article *ngFor="let service of services" (click)="sharedSvc.goAseo()">
