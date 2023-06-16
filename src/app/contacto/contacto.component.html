@@ -1,1 +1,51 @@
-<p>contacto works!</p>
+<section class="section-1">
+    <h1>Contáctanos</h1>
+</section>
+<section class="section-2">
+    <form (ngSubmit)="onSubmit()">
+        <h3>Envíanos un mensaje:</h3>
+        <div class="data">
+            <input type="text" name="name" placeholder="Nombres y Apellidos" [(ngModel)]="form.nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" [(ngModel)]="form.email" required>
+        </div>
+        <div class="data">
+            <select id="locales" name="locales" [(ngModel)]="form.local" required>
+                <option value="" disabled selected>Seleccionar Local</option>
+                <option *ngFor="let local of locales" [value]="local.distrito">{{ local.distrito }}</option>
+            </select>
+            <select id="servicios" name="servicios" [(ngModel)]="form.servicio" required>
+                <option value="" disabled selected>Seleccionar Servicio</option>
+                <option *ngFor="let servicio of servicios" [value]="servicio">{{ servicio }}</option>
+            </select>
+        </div>
+        <textarea class="mensaje" name="message" placeholder="Mensaje" rows="6" [(ngModel)]="form.mensaje" required>
+        </textarea>
+        <div class="contact-footer">
+            <div>
+                <div class="sending-message" *ngIf="sending">Enviando...</div>
+                <div class="error" *ngIf="formError">{{ formError }}</div>
+                <div class="success-message" *ngIf="messageSent">Mensaje enviado.</div>
+            </div>
+            <div class="sent-button">
+                <button type="submit" [disabled]="sending">Enviar</button>
+            </div>
+        </div>
+    </form>
+
+    <section class="locals">
+        <h3>Locales:</h3>
+        <p>Importante: Atención previa cita</p>
+        <article *ngFor="let local of locales">
+            <h4>{{local.distrito}}</h4>
+            <ul>
+                <li><span class="material-icons">map</span>Dirección:
+                    <a href="{{local.googleMaps}}" target="_blank">{{local.direccion}}</a>
+                </li>
+                <li><span class="material-icons">phone</span>WhatsApp:
+                    <a href="{{local.whatsapp}}" target="_blank">{{local.telefono}}</a>
+                </li>
+                <li><span class="material-icons">schedule</span>Horario: {{local.horario}}</li>
+            </ul>
+        </article>
+    </section>
+</section>

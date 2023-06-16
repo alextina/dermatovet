@@ -1,5 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
-import { SharedServiceService } from '../services/shared-service.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-aseo',
@@ -7,6 +7,10 @@ import { SharedServiceService } from '../services/shared-service.service';
   styleUrls: ['./aseo.component.scss']
 })
 export class AseoComponent {
+
+  constructor(
+    private meta: Meta
+  ) { }
 
   selectedService: any;
   detailsTitle: string = '';
@@ -29,7 +33,7 @@ export class AseoComponent {
           "Ideal para mascotas mayores con problemas de articulaciones, dolores y molestias."
         ]
       },
-      "image": "../../assets/therapy-clean.png",
+      "image": "../../assets/therapy-clean.webp",
       "link": "https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20deseo%20agendar%20una%20cita%20para%20Therapy-Clean."
     },
     {
@@ -46,18 +50,11 @@ export class AseoComponent {
           "Elimina los olores indeseados."
         ]
       },
-      "image": "../../assets/ozonoterapia.png",
+      "image": "../../assets/ozonoterapia.webp",
       "link": "https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20deseo%20agendar%20una%20cita%20para%20Ozonoterapia."
     },
     {
       "id": 3,
-      "title": "Baño Clásico",
-      "description": "Nuestros baños clásicos son ideales para mantener la higiene y limpieza de tu perro. Con productos suaves y respetuosos, brindamos un baño relajante y refrescante que dejará a tu mascota con un pelaje suave y brillante. Disfruta de un cuidado tradicional pero efectivo para mantener a tu engreído siempre impecable.",
-      "image": "../../assets//baños-clásicos.png",
-      "link": "https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20deseo%20agendar%20una%20cita%20para%20Baños%20Clásicos."
-    },
-    {
-      "id": 4,
       "title": "Baño Medicado",
       "description": "Nuestros baños medicados están diseñados para atender las dolencias específicas en la piel. Con la aplicación de medicamentos recetados por veterinarios, aseguramos una recuperación efectiva y rápida, brindando el cuidado necesario para aliviar molestias y mejorar la salud dermatológica de tu peque de 4 patas.",
       "details": {
@@ -68,10 +65,21 @@ export class AseoComponent {
           "Indicaciones de secado."
         ]
       },
-      "image": "../../assets/baños-medicados.png",
+      "image": "../../assets/baños-medicados.webp",
       "link": "https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20deseo%20agendar%20una%20cita%20para%20Baños%20Medicados."
+    },
+    {
+      "id": 4,
+      "title": "Baño Clásico",
+      "description": "Nuestros baños clásicos son ideales para mantener la higiene y limpieza de tu perro. Con productos suaves y respetuosos, brindamos un baño relajante y refrescante que dejará a tu mascota con un pelaje suave y brillante. Disfruta de un cuidado tradicional pero efectivo para mantener a tu engreído siempre impecable.",
+      "image": "../../assets//baños-clásicos.webp",
+      "link": "https://api.whatsapp.com/send?phone=51979707797&text=Hola,%20deseo%20agendar%20una%20cita%20para%20Baños%20Clásicos."
     }
   ]
+
+  ngOnInit() {
+    this.meta.updateTag({ name: 'description', content: 'Descubre nuestros servicios de aseo y tratamientos especializados para mantener la piel y el pelaje de tu mascota en óptimas condiciones. Con productos de calidad y técnicas profesionales, brindamos limpieza profunda, terapias naturales y soluciones dermatológicas. Confía en DermatoVet para el cuidado completo de tu engreído.' });
+  }
 
   openModal(service: any) {
     this.selectedService = service;

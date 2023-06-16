@@ -20,10 +20,6 @@ const routes: Routes = [
     component: AseoComponent,
   },
   {
-    path: 'locales',
-    component: LocalesComponent,
-  },
-  {
     path: 'contacto',
     component: ContactoComponent,
   }

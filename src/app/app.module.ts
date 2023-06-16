@@ -11,6 +11,9 @@ import { AseoComponent } from './aseo/aseo.component';
 import { LocalesComponent } from './locales/locales.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,9 @@ import { ContactoComponent } from './contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
