@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DermatologiaComponent } from './dermatologia/dermatologia.component';
 import { AseoComponent } from './aseo/aseo.component';
-import { LocalesComponent } from './locales/locales.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [

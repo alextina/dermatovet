@@ -42,7 +42,7 @@ export class ContactoComponent {
   servicios = [
     "Cita Dermatológica",
     "Therapy Clean",
-    "Ozonoterapia",
+    // "Ozonoterapia",
     "Baño Clásico",
     "Baño Medicado"
   ];

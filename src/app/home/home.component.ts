@@ -24,10 +24,10 @@ export class HomeComponent {
       "image": "../../assets/therapy-clean.webp"
 
     },
-    {
-      "title": "Ozonoterapia",
-      "image": "../../assets/ozonoterapia.webp"
-    },
+    // {
+    //   "title": "Ozonoterapia",
+    //   "image": "../../assets/ozonoterapia.webp"
+    // },
     {
       "title": "Baño Medicado",
       "image": "../../assets/baños-medicados.webp"

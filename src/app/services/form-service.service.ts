@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class FormServiceService {
 
-  private url = 'https://formsubmit.co/ajax/informes@dermatovet.pe';
+  private url = 'https://formsubmit.co/ajax/consultas@dermatovet.pe';
   private headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
