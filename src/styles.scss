@@ -89,7 +89,7 @@ ol {
 
 button,
 .buttonClass {
-    font-size: var(--h5-size);
+    font-size: var(--p-size) !important;
     height: 50px;
     padding: 10px 20px;
     color: var(--main-dark-color);

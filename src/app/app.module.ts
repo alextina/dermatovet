@@ -12,6 +12,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     DermatologiaComponent,
     AseoComponent,
-    ContactoComponent
+    ContactoComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

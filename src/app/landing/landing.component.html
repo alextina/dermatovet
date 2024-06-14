@@ -1,0 +1,19 @@
+<section class="landing-section">
+  <div>
+    <img src="../../assets/isotipo-color.png">
+  </div>
+  <h2>DermatoVet</h2>
+  <p>+10 años dedicados a resolver problemas dermatológicos de los engreídos de casa</p>
+
+  <section *ngFor="let item of data; let i = index">
+    <article class="landing-article">
+      <h6 *ngIf="i !== 0">{{ item.title }}</h6>
+      <article *ngFor="let subItem of item.items">
+        <a [href]="subItem.ulr" target="_blank" rel="noopener noreferrer">
+          <img [src]="subItem.icon">
+          <span>{{ subItem.text }}</span>
+        </a>
+      </article>
+    </article>
+  </section>
+</section>

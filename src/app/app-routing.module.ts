@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { DermatologiaComponent } from './dermatologia/dermatologia.component';
 import { AseoComponent } from './aseo/aseo.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'contacto',
     component: ContactoComponent,
+  },
+  {
+    path: 'landing',
+    component: LandingComponent,
   }
 ];
 
