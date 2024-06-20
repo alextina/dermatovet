@@ -9,13 +9,16 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'dermatovet';
   showHeaderFooter: boolean = true;
+  showWhatsAppButton: boolean = true;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.showHeaderFooter = !event.url.includes('/landing');
+        const isLanding = event.url.includes('/informacion');
+        this.showHeaderFooter = !isLanding;
+        this.showWhatsAppButton = !isLanding;
       }
     });
   }

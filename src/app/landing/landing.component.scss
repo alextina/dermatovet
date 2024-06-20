@@ -1,6 +1,6 @@
 .landing-section {
   background-color: var(--second-light-color);
-  padding: 25px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +24,17 @@
   }
 
   p {
-    width: 500px;
     text-align: center;
+    margin-bottom: 10px;
+    width: 95%;
+    max-width: 500px;
+    min-width: 320px;
+  }
+
+  .main-container {
+    width: 95%;
+    max-width: 500px;
+    min-width: 320px;
   }
 
   .landing-article {
@@ -34,11 +43,11 @@
     gap: 10px;
 
     h6 {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     article {
-      width: 500px;
+      width: 100%;
       border-radius: 10px;
       background-color: var(--main-light-color);
       border: solid 1px var(--main-light-color);
@@ -55,7 +64,6 @@
         img {
           width: 40px;
           height: 40px;
-          background-color: red;
           border-radius: 10px;
           position: absolute;
           left: 10px;
@@ -63,6 +71,8 @@
         }
 
         span {
+          min-width: 200px;
+          max-width: 250px;
           font-weight: 600;
           color: var(--main-dark-color);
           padding-bottom: 0;

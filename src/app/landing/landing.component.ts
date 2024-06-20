@@ -60,6 +60,11 @@ export class LandingComponent {
           "icon": '../../assets/facebook-logo.png',
           "text": 'Facebook',
           "ulr": 'https://www.facebook.com/dermatovet.pe/'
+        },
+        {
+          "icon": 'https://cdn-icons-png.flaticon.com/512/8743/8743996.png',
+          "text": 'Web',
+          "ulr": '/'
         }
       ]
     }
